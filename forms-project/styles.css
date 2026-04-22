@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "NorseBold";
+  src: url("fonts/Norsebold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  position: relative;
+  background-image: url("img/hero.avif");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+.right {
+  height: 100vh;
+  width: 50vw;
+}
+
+.h1-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: NorseBold;
+  font-size: 100px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 50vw;
+  top: 25%;
+  padding: 15px 0;
+  transform: translateY(-50%);
+  height: 18vh;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.logo {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.logo-container {
+  position: relative;
+  width: 50%;
+}
+
+
