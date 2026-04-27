@@ -16,6 +16,7 @@ html.dark {
   --primary-color: #d4d4d4;
 }
 
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -25,6 +26,7 @@ body {
   margin: 0;
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  transition: all 0.5s ease;
 }
 
 
@@ -106,6 +108,7 @@ body {
   height: 390px;
   border-radius: 50%;
   background-color: var(--secondary-color);
+  transition: background-color 0.5s ease;
 }
 
 
@@ -159,3 +162,4 @@ body {
   padding-left: 3px;
   border-radius: 20%;
 }
+
