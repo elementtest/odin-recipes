@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  
+  font-family: inherit;
 }
 
 
@@ -31,6 +31,23 @@ body {
   background-size: cover;
   height: 100vh;
   width: 50vw;
+}
+
+.credit {
+  color: #fff;
+  position: absolute;
+  bottom: 1%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.credit a {
+  text-decoration: underline;
+  color: inherit;
 }
 
 .right {
@@ -74,4 +91,71 @@ h1 {
   width: 50%;
 }
 
+.right {
+  background-color: #f9fafb;
+}
 
+
+.inspire-quote {
+  display: flex;
+  height: 37%;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+}
+
+.inspire-quote span {
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+
+.fill-in-section {
+  height: 35%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.fill-in-section h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  height: 30%;
+}
+
+form {
+  height: 100%;
+  display: flex;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+label[for] {
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 80%;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 30px;
+}
+
+.form-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
