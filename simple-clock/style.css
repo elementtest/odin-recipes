@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@450;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-color: #010101;
+  --secondary-color: #d4d4d4;
+}
+
+
+html.dark {
+  --secondary-color: #010101;
+  --primary-color: #d4d4d4;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+
+
+.toggle {
+  border: 0;
+  padding: 20px 15px;
+  border-radius: 8px;
+  position: absolute;
+  top: 2vh;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  height: 40vh;
+  width: 40vw;
+  position: relative;
+  margin-bottom: 8vh;
+}
+
+.hour {
+  background-color: purple;
+  position: absolute;
+  transform-origin: bottom center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-100%) rotate(99deg);
+  height: 120px;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.minute {
+  background-color: orange;
+  position: absolute;
+  transform-origin: bottom center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-100%) rotate(233deg);
+  height: 209px;
+  width: 10px;
+  border-radius: 10px;
+}
+
+
+.second {
+  position: absolute;
+  transform-origin: bottom center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  z-index: -5;
+  background: conic-gradient(#4caf50 0% 1%, transparent 1% 100%);
+}
+
+.second::after {
+  content: '';
+  position: absolute;
+  transform-origin: bottom center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: background-color 0.5s ease;
+}
+
+
+
+
+
+
+
+
+.center-point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  background-color: darkred;
+}
+
+.center-point::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+}
+
+.time {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.date {
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  padding-left: 3px;
+  border-radius: 20%;
+}
+

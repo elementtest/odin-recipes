@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+.container-two {
+  border: 2px solid red;
+  position: fixed;
+  bottom: 15px;
+}
+div h4 {
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+div.active h4 {
+  /*   English title will fade out when hovered over */
+  opacity: 0;
+}
+.container-two {
+  margin-top: 5%;
+}
+h3 {
+  position: absolute;
+  top: 1px;
+  font-style: italic;
+}
+h4 {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+}
+body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.panel {
+  height: 15vh;
+  width: 10vw;
+  border-radius: 5px;
+  border: 2px solid black;
+
+  margin: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+h1 {
+  position: absolute;
+  left: 30%;
+}
+
+.active {
+  height: 80vh;
+  width: 20vw;
+  position: absolute;
+}
+
+.active.fire::before {
+  position: absolute;
+  content: "火";
+  font-size: 200px;
+  color: rgba(187, 1, 1, 1);
+  z-index: 0;
+}
+.active.fire::after {
+  content: 'The Chinese character "fire" depicts flickering flames';
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;
+  top: 70%;
+  color: black;
+  left: 10px;
+  right: 2px;
+}
+.active.water::after {
+  content: 'The chinese character "water" depicts the flow of a stream';
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;
+  top: 70%;
+  color: black;
+  left: 10px;
+}
+.active.wind::after {
+  content: 'The character "wind" depicts a flag fluttering';
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;
+  top: 70%;
+  color: black;
+  left: 10px;
+}
+.active.earth::after {
+  content: 'The character "earth" depicts a mound of dirt';
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;
+  top: 70%;
+  color: black;
+  left: 10px;
+}
+
+.active.water::before {
+  content: "水";
+  font-size: 200px;
+  color: rgba(1, 1, 187, 1);
+  z-index: 0;
+  top: 10%;
+}
+
+.active.wind::before {
+  content: "風";
+  font-size: 200px;
+  color: rgba(0, 100, 0, 1);
+  z-index: 0;
+  top: 10%;
+}
+
+.active.earth::before {
+  content: "土";
+  font-size: 200px;
+  color: rgba(51, 27, 0, 1);
+  z-index: 0;
+  top: 10%;
+}
+
+.fire {
+  background-color: rgba(255, 165, 0, 0.5);
+  position: relative;
+}
+
+.water {
+  background-color: rgba(100, 100, 255, 0.5);
+  position: relative;
+}
+
+.wind {
+  background-color: rgba(75, 150, 122, 0.5);
+  position: relative;
+}
+
+.earth {
+  background-color: rgba(155, 20, 20, 0.5);
+  position: relative;
+}
+
