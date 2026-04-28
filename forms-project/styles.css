@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
   font-family: inherit;
 }
-
 
 @font-face {
   font-family: "NorseBold";
@@ -14,7 +13,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   overflow: hidden;
 }
@@ -43,7 +42,6 @@ body {
   align-items: center;
   width: 100%;
 }
-
 
 .credit a {
   text-decoration: underline;
@@ -95,10 +93,9 @@ h1 {
   background-color: #f9fafb;
 }
 
-
 .inspire-quote {
   display: flex;
-  height: 37%;
+  height: 33%;
   align-items: center;
   padding: 5%;
   position: relative;
@@ -118,14 +115,14 @@ h1 {
 }
 
 .fill-in-section h2 {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
 .row {
   display: flex;
   gap: 16px;
-  height: 30%;
+  height: 25%;
 }
 
 form {
@@ -158,4 +155,36 @@ input {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.create-account {
+  position: relative;
+  height: 25.8%;
+}
+
+.create-account button {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  border: none;
+  padding: 15px 75px;
+  background-color: #5a6c4b;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 10px;
+  font-family: inherit;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.create-account p {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.create-account p a {
+  color: #5a6c4b;
+  text-decoration: none;
+  font-weight: bolder;
 }
