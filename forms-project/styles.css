@@ -148,6 +148,12 @@ input {
   border-radius: 5px;
   padding: 8px 12px;
   margin-left: 30px;
+  outline: none;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  border: 1px solid #3962d7;
 }
 
 .form-wrapper {
@@ -187,4 +193,12 @@ input {
   color: #5a6c4b;
   text-decoration: none;
   font-weight: bolder;
+}
+
+input[type="password"]:user-invalid {
+  border: 2px solid red;
+}
+
+input[type="password"]:user-valid {
+  border: 2px solid green;
 }
