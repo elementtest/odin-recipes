@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "nav top top top" "nav bottom bottom bottom" "nav bottom bottom bottom" "nav bottom bottom bottom";
+}
+
+.nav  {
+  background-color: #2992d0;
+  grid-area: nav;
+}
+
+.top  {
+  grid-area: top;
+  background-color: #fff;
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: #e1e7ef;
+}
+
