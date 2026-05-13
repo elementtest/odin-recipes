@@ -12,7 +12,7 @@ html, body {
   grid-template-areas: "nav top top top" "nav bottom bottom bottom" "nav bottom bottom bottom" "nav bottom bottom bottom";
 }
 
-.nav  {
+.left  {
   background-color: #2992d0;
   grid-area: nav;
 }
