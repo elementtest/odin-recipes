@@ -58,3 +58,19 @@ nav ul li:nth-child(6) {
   margin-bottom: 75px;
 }
 
+.dashboard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.dashboard span {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dashboard svg {
+  margin-right: 15px;
+  width: 40px;
+}
