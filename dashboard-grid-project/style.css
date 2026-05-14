@@ -79,6 +79,9 @@ nav ul li:nth-child(6) {
 .search {
   background-color: #d6c38d;
   grid-area: search;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .profile {
@@ -101,4 +104,17 @@ nav ul li:nth-child(6) {
   grid-template-areas: "search search search profile profile" "welcome welcome welcome file file";
   grid-template-columns: 30% 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 55%;
+}
+
+.bar input {
+  border: none;
+  outline: none;
+  width: 400px;
+}
+
+.glass {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
