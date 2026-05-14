@@ -75,3 +75,30 @@ nav ul li:nth-child(6) {
   margin-right: 15px;
   width: 40px;
 }
+
+.search {
+  background-color: #d6c38d;
+  grid-area: search;
+}
+
+.profile {
+  background-color: #82aaff;
+  grid-area: profile;
+}
+
+.welcome {
+  background-color: #f5793e;
+  grid-area: welcome;
+}
+
+.file {
+  background-color: #f94931;
+  grid-area: file;
+}
+
+.top {
+  display: grid;
+  grid-template-areas: "search search search profile profile" "welcome welcome welcome file file";
+  grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 55%;
+}
