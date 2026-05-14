@@ -54,3 +54,7 @@ a span {
   font-size: 22px;
 }
 
+nav ul li:nth-child(6) {
+  margin-bottom: 75px;
+}
+
