@@ -67,7 +67,7 @@ nav ul li:nth-child(6) {
 
 .dashboard span {
   color: #fff;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -172,8 +172,28 @@ nav ul li:nth-child(6) {
   cursor: pointer;
 }
 
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
 .welcome .profile-pic {
-  border: 3px solid red;
+  margin-left: 35px;
   width: 75px;
   height: 75px;
+}
+
+.hi-there-xie {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hi-there-xie h4,
+.hi-there-xie h2 {
+  margin: 0;
 }
