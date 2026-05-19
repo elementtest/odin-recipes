@@ -220,7 +220,6 @@ nav ul li:nth-child(6) {
 
 .projects {
   grid-area: projects;
-  background-color: #f8c847;
   display: grid;
   padding: 3% 0 5%;
   grid-template-rows: 5% 95%;
@@ -233,13 +232,13 @@ nav ul li:nth-child(6) {
 }
 
 .your-projects {
-  background-color: #4e9a06;
   padding: 0;
   margin: 0;
+  margin-left: 10px;
+  font-weight: 540;
 }
 
 .tiles {
-  background-color: #cfd8dc;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -252,6 +251,8 @@ nav ul li:nth-child(6) {
   background-color: #ffffff;
   padding: 10px;
   position: relative;
+  border-radius: 7px;
+  border-left: 7px solid #eeb13d;
 }
 
 .super-cool-project svg {
