@@ -211,3 +211,77 @@ nav ul li:nth-child(6) {
   cursor: pointer;
 
 }
+
+.bottom {
+  display: grid;
+  grid-template-areas: "projects announcements-trending";
+  grid-template-columns: 70% 1fr;
+}
+
+.projects {
+  grid-area: projects;
+  background-color: #f8c847;
+  display: grid;
+  padding: 3% 0 5%;
+  grid-template-rows: 5% 95%;
+  gap: 5px;
+}
+
+.announcements-trending {
+  grid-area: announcements-trending;
+  background-color: #f5793e;
+}
+
+.your-projects {
+  background-color: #4e9a06;
+  padding: 0;
+  margin: 0;
+}
+
+.tiles {
+  background-color: #cfd8dc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.super-cool-project {
+  background-color: #ffffff;
+  padding: 10px;
+  position: relative;
+}
+
+.super-cool-project svg {
+  width: 30px;
+  position: absolute;
+}
+
+.super-cool-project button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit; /* so icon inherits text color */
+}
+
+.star svg {
+  right: 35%;
+  bottom: 5%;
+}
+
+.eye svg {
+  right: 20%;
+  bottom: 5%;
+}
+
+.share svg {
+  right: 5%;
+  bottom: 5%;
+}
+
+
+
+
