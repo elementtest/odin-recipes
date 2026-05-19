@@ -283,6 +283,22 @@ nav ul li:nth-child(6) {
   bottom: 5%;
 }
 
+.announcements-trending {
+  border: 3px solid purple;
+  display: grid;
+  grid-template-areas: "announcements" "trending";
+}
+
+.announcements {
+  background-color: #4e9a06;
+  grid-area: announcements;
+}
+
+.trending {
+  background-color: #3193ce;
+  grid-area: trending;
+}
+
 
 
 
