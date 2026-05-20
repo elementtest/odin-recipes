@@ -228,7 +228,6 @@ nav ul li:nth-child(6) {
 
 .announcements-trending {
   grid-area: announcements-trending;
-  background-color: #f5793e;
 }
 
 .your-projects {
@@ -284,13 +283,12 @@ nav ul li:nth-child(6) {
 }
 
 .announcements-trending {
-  border: 3px solid purple;
   display: grid;
   grid-template-areas: "announcements" "trending";
+  grid-template-rows: 1fr 1fr;
 }
 
 .announcements {
-  background-color: #4e9a06;
   grid-area: announcements;
 }
 
@@ -305,7 +303,9 @@ nav ul li:nth-child(6) {
 }
 
 .announcements h2 {
+  margin-top: 8%;
   margin-left: 5%;
+  font-weight: 540;
 }
 
 .site-bar {
@@ -314,9 +314,25 @@ nav ul li:nth-child(6) {
   margin-left: 5%;
   background-color: #ffffff;
   border-radius: 7px;
-  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
 }
 
+.site-bar h5 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.site-bar p  {
+  margin: 0; 
+  padding: 0; 
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
 
 
 
