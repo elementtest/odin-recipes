@@ -6,8 +6,9 @@ html, body {
   box-sizing: border-box;
 }
 
+
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 20% 1fr 1fr 1fr;
   grid-template-rows: 20% 1fr 1fr 1fr;
@@ -285,7 +286,7 @@ nav ul li:nth-child(6) {
 .announcements-trending {
   display: grid;
   grid-template-areas: "announcements" "trending";
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 45% 55%;
 }
 
 .announcements {
@@ -309,7 +310,7 @@ nav ul li:nth-child(6) {
 
 .site-bar {
   width: 90%;
-  height: 70%;
+  max-height: 80%;
   margin-left: 5%;
   background-color: #ffffff;
   border-radius: 7px;
@@ -382,4 +383,20 @@ nav ul li:nth-child(6) {
 }
 .desc-handle {
   color: #646464;
+}
+
+@media (min-width: 1200px) {
+  .bottom {
+    grid-template-columns: 74% 1fr;
+  }
+  .announcements-trending {
+  grid-template-areas: "announcements" "trending";
+  grid-template-rows: 35% 65%;
+}
+
+.accounts {
+  height: max-content;
+}
+
+
 }
