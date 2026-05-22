@@ -9,9 +9,10 @@ html, body {
 
 .container {
   min-height: 100vh;
+  height: auto;
   display: grid;
   grid-template-columns: 20% 1fr 1fr 1fr;
-  grid-template-rows: 20% 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-areas: "nav top top top" "nav bottom bottom bottom" "nav bottom bottom bottom" "nav bottom bottom bottom";
 }
 
