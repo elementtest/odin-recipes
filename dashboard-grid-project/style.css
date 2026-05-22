@@ -293,7 +293,6 @@ nav ul li:nth-child(6) {
 }
 
 .trending {
-  background-color: #3193ce;
   grid-area: trending;
 }
 
@@ -350,16 +349,37 @@ nav ul li:nth-child(6) {
 
 .accounts {
   width: 90%;
-  height: 79%;
+  height: 77%;
   background-color:#ffff ;
   margin-left: 5%; 
   margin-top: 0;
   border-radius: 8px;
-  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-account svg {
   width: 60px;
 }
 
+.item-account {
+  display: flex;
+  margin: 8px;
+  border-bottom: 1px solid #646464;
+}
 
+.item-account p {
+  margin: 0;
+  padding: 0;
+}
+
+.info-account {
+  margin: 8px;
+}
+
+.at-handle {
+  font-weight: 540;
+}
+.desc-handle {
+  color: #646464;
+}
