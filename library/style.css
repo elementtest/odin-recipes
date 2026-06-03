@@ -47,7 +47,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-areas: "top" "bottom";
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 20% 1fr;
 }
 
 .top { 
@@ -56,6 +56,7 @@ body {
 }
 
 .show {
+  cursor: pointer;
   position: absolute;
   width: 50%;
   height: 50%;
