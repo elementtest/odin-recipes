@@ -11,13 +11,41 @@
     <!-- TOP -->
     <div class="top">
       <dialog id="dialog">
-        Content here
-        <button class="close">close</button>
+        <h2>Add a Book</h2>
+        <form id="book-form" method="dialog">
+          <div class="field">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Book title" required />
+          </div>
+          <div class="field">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Author name" required />
+          </div>
+          <div class="field">
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" name="pages" placeholder="Number of pages" min="1" required />
+          </div>
+          <div class="field">
+            <span class="label">Read status</span>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="read" value="read" /> Read
+              </label>
+              <label>
+                <input type="radio" name="read" value="not-read" checked /> Not read
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="close">Cancel</button>
+            <button type="submit">Add Book</button>
+          </div>
+        </form>
       </dialog>
-
       <button class="show">Add a Book</button>
     </div>
     <!-- /top -->
+
     <!-- BOTTOM -->
     <div class="bottom">
       <div class="book-tile">
@@ -26,14 +54,12 @@
         <h3 class="pages">Pages: 310</h3>
         <h3 class="read">NOT READ</h3>
       </div>
-
       <div class="book-tile">
         <h3 class="title">Harry Potter and the Sorcerer's Stone</h3>
         <h3 class="author">J.K. Rowling</h3>
         <h3 class="pages">Pages: 309</h3>
         <h3 class="read">READ</h3>
       </div>
-
       <div class="book-tile">
         <h3 class="title">Lord of the Rings</h3>
         <h3 class="author">JRR Tolkien</h3>
