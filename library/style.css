@@ -1,0 +1,67 @@
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and paddings for common layout elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow percentage-based heights in the application */
+html, body {
+  height: 100%;
+}
+
+/* 4. Improve media defaults and remove border behaviors */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form controls so they don't use ugly browser defaults */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Improve text rendering and line height */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 7. Avoid text overflows on long words */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* START ACTUAL CODE */
+dialog {
+  top: 20%;
+  left: 40%;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "top" "bottom";
+  grid-template-rows: 1fr 3fr;
+}
+
+.top { 
+  background-color: #36707e;
+  position: relative;
+}
+
+.show {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  font-size: 50px;
+  border-radius: 20px;
+  left: 20%;
+  top: 20%;
+}
+
