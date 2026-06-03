@@ -65,3 +65,18 @@ body {
   top: 20%;
 }
 
+.bottom {
+  padding: 5%;
+  display: grid;
+  grid-gap: 10%;
+}
+
+.book-tile {
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #cfd8dc;
+  border: 3px solid red;
+  height: 200px;
+  width: 200px;
+  
+}
