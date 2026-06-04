@@ -17,8 +17,12 @@ form.addEventListener('submit', (e) => {
   const author = document.getElementById('author').value;
   const pages = document.getElementById('pages').value;
   const read = document.querySelector('input[name="read"]:checked').value;
-  console.log(title , author , pages, read);
-  dialogElem.close();
-  form.reset();
+  let uniqueid = crypto.randomUUID();
+  const myLibrary = [{title, author, pages, read, uniqueid}];
+  console.log(myLibrary);
+  // close after submit
+  // dialogElem.close();
+  // reset form after submit
+  // form.reset();
 })
 

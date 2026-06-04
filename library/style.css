@@ -1,6 +1,8 @@
 /* CSS RESET */
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,18 +13,26 @@
 }
 
 /* 3. Allow percentage-based heights in the application */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 /* 4. Improve media defaults and remove border behaviors */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 5. Inherit fonts for form controls so they don't use ugly browser defaults */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -33,7 +43,13 @@ body {
 }
 
 /* 7. Avoid text overflows on long words */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -50,7 +66,7 @@ body {
   grid-template-rows: 20% 1fr;
 }
 
-.top { 
+.top {
   background-color: #36707e;
   position: relative;
 }
@@ -70,14 +86,23 @@ body {
   padding: 5%;
   display: grid;
   grid-gap: 10%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .book-tile {
+  position: relative;
   border-radius: 7px;
   padding: 10px;
   background-color: #cfd8dc;
-  border: 3px solid red;
   height: 200px;
   width: 200px;
-  
+}
+
+.book-tile button {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
 }
