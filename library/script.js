@@ -24,8 +24,8 @@ form.addEventListener("submit", (e) => {
   const read = document.querySelector('input[name="read"]:checked').value;
   const book = { title, author, pages, read };
   displaybook(book);
-  // dialogElem.close();
-  // form.reset();
+  dialogElem.close();
+  form.reset();
 });
 
 function displaybook(book) {
